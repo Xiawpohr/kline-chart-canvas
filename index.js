@@ -115,7 +115,7 @@ class KlineChart {
   }
 
   /**
-   * Utility
+   * Utilities
    */
 
   getPosX(data) {
