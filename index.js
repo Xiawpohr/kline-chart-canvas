@@ -110,7 +110,7 @@ class KlineChart {
     const lineWidth = 1
     const fillStyle = close < open ? '#5EBA89' : '#CE3D4E'
     this.context.fillStyle = fillStyle
-    this.context.fillRect(time, Math.max(open, close), boxWidth, Math.abs(close - open)) // box
+    this.context.fillRect(time, Math.min(open, close), boxWidth, Math.abs(close - open)) // box
     this.context.fillRect(time + (boxWidth / 2) - (lineWidth / 2), high, lineWidth, Math.abs(high - low)) // line
   }
 
